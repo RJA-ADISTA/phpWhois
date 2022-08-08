@@ -56,7 +56,7 @@ class pt_handler
         $r['regrinfo'] = get_blocks($data['rawdata'], $items);
 
         if (empty($r['regrinfo']['domain']['name'])) {
-            print_r($r['regrinfo']);
+            //print_r($r['regrinfo']);
             $r['regrinfo']['registered'] = 'no';
             return $r;
         }
